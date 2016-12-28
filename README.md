@@ -138,3 +138,30 @@ console.log(myCountry.length);
 
 // Use console.log to print out the first three letters of myCountry.
 console.log(myCountry.substring(0,3) );
+
+// On line 2, declare a variable myName and give it your name.
+var myName="Dragos";
+// On line 4, use console.log to print out the myName variable.
+console.log("myName");
+// On line 7, change the value of myName to be just the first 2 
+// letters of your name.
+myName="Dr";
+// On line 9, use console.log to print out the myName variable.
+console.log(myName);
+
+var myColor="Verde";
+console.log(myColor.length);
+
+// Not sure where to begin? Check the Hint!
+if (9-6==4 ) {
+
+console.log("SE afiseaza daca prima conditie este adevarata");
+} else {
+    
+    console.log("I finished my first course");
+    }
+    
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("I am ready");
+
