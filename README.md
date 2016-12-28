@@ -1314,3 +1314,693 @@ var bob = new Object();
 bob.name = "Bob Smith";
 // add bob's age here and set it equal to 20
 bob.age=20;
+
+
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Let's make bob and susan again, using our constructor
+var bob = new Person("Bob Smith", 30);
+var susan = new Person("Susan Jordan", 25);
+// help us make george, whose name is "George Washington" and age is 275
+var george= new Person("George Washington",275);
+
+function Cat(age, color) {
+  this.age = age;
+  this.color = color;
+}
+
+// make a Dog constructor here
+function Dog(age,name,breed){
+    
+    this.age=age;
+    this.name=name;
+    this.breed=breed;
+    
+    }
+    
+    
+    function Person(name,age) {
+  this.name = name;
+  this.age = age;
+  this.species = "Homo Sapiens";
+}
+
+var sally = new Person("Sally Bowles",39);
+var holden = new Person("Holden Caulfield",16);
+console.log("sally's species is " + sally.species + " and she is " + sally.age);
+console.log("holden's species is " + holden.species + " and he is " + holden.age);
+
+
+function Rectangle(height, width) {
+  this.height = height;
+  this.width = width;
+  this.calcArea = function() {
+      return this.height * this.width;
+  };
+  // put our perimeter function here!
+  this.calcPerimeter = function(){
+  return 2* this.height+2* this.width;
+  };
+}
+
+var rex = new Rectangle(7,3);
+var area = rex.calcArea();
+var perimeter = rex.calcPerimeter();
+
+
+function Rabbit(adjective) {
+    this.adjective = adjective;
+    this.describeMyself = function() {
+        console.log("I am a " + this.adjective + " rabbit");
+    };
+}
+
+// now we can easily make all of our rabbits
+var rabbit1 = new Rabbit("fluffy");
+var rabbit2 = new Rabbit("happy");
+var rabbit3 = new Rabbit("sleepy");
+
+rabbit1.describeMyself();
+rabbit2.describeMyself();
+rabbit3.describeMyself();
+
+
+// Our person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Now we can make an array of people
+var family = new Array();
+family[0] = new Person("alice", 40);
+family[1] = new Person("bob", 42);
+family[2] = new Person("michelle", 8);
+// add the last family member, "timmy", who is 6 years old
+family[3] = new Person("timmy",6);
+
+
+
+// Our Person constructor
+function Person(name,age){
+    this.name=name;
+    this.age=age;
+    
+   
+   
+    };
+
+
+// Now we can make an array of people
+ var family = new Array ();
+    
+   family[0] = new Person("alice",40);
+   family[1] = new Person("bob",42);
+   family[2] = new Person("michelle",8);
+   family[3] = new Person("timmy",6);
+
+// loop through our new array
+
+for (i=0;i<family.length;i++){
+    console.log(family[i].name);
+    
+    }
+    
+    
+// Our person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// We can make a function which takes persons as arguments
+// This one computes the difference in ages between two people
+var ageDifference = function(person1, person2) {
+    return person1.age - person2.age;
+}
+
+var alice = new Person("Alice", 30);
+var billy = new Person("Billy", 25);
+
+// get the difference in age between alice and billy using our function
+var diff = ageDifference(alice,billy);
+
+
+
+
+// Our person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// We can make a function which takes persons as arguments
+// This one computes the difference in ages between two people
+var ageDifference = function(person1, person2) {
+    return person1.age - person2.age;
+};
+
+// Make a new function, olderAge, to return the age of
+// the older of two people
+
+var olderAge= function(person1,person2){
+    
+    
+    if(person1.age > person2.age){
+        
+        return person1.age;
+        
+        }else {
+            
+            return person2.age;
+            }
+    
+    };
+    
+    
+
+// Let's bring back alice and billy to test our new function
+var alice = new Person("Alice", 30);
+var billy = new Person("Billy", 25);
+
+console.log("The older person is " + olderAge(alice, billy));
+
+var spencer = {
+  age: 22,
+  country: "United States"
+};
+
+// make spencer2 here with constructor notation
+var spencer2 = new Object();
+
+spencer2.age=22;
+spencer2.country="United States";
+
+
+var snoopy = new Object();
+snoopy.species = "beagle";
+snoopy.age = 10;
+
+// save Snoopy's age and species into variables
+// use dot notation for snoopy's species
+var species = snoopy.species;
+
+    
+// use bracket notation for snoopy's age
+var age = snoopy["age"];
+
+
+
+// 3 lines required to make harry_potter
+var harry_potter = new Object();
+harry_potter.pages = 350;
+harry_potter.author = "J.K. Rowling";
+
+// A custom constructor for book
+function Book (pages, author) {
+    this.pages = pages;
+    this.author = author;
+}
+
+// Use our new constructor to make the_hobbit in one line
+var the_hobbit= new Book(320,"J.R.R. Tolkien");
+
+
+function Circle (radius) {
+    this.radius = radius;
+    this.area = function () {
+        return Math.PI * this.radius * this.radius;
+        
+    };
+    // define a perimeter method here
+           
+        this.perimeter= function () {
+            
+            return 2 * Math.PI * radius;
+            };
+    
+        
+        
+        
+};
+
+
+
+var james = {
+    // add properties to this object!
+job:"programmer",
+married:false
+    
+};
+
+function Person(job, married) {
+    this.job = job;
+    this.married = married;
+};
+
+// create a "gabby" object using the Person constructor!
+var gabby = new Person("student",true);
+
+
+function Person(job, married) {
+    this.job = job;
+    this.married = married;
+    // add a "speak" method to Person!
+    this.speak= function (){
+        
+            
+    console.log("Hello!");
+    
+    }
+}
+
+var user = new Person("Codecademy Student",false);
+user.speak();
+
+
+var james = {
+    job: "programmer",
+    married: false,
+    speak: function(mood) {
+        
+        console.log("Hello, I am feeling "+mood);
+        
+    }
+};
+
+james.speak("great");
+james.speak("just okay");
+
+
+
+var james = {
+    job: "programmer",
+    married: false,
+    sayJob: function() {
+        // complete this method
+        console.log("Hi, I work as a "+this.job);
+    }
+};
+
+// james' first job
+james.sayJob();
+
+// change james' job to "super programmer" here
+james.job= "super programmer";
+
+// james' second job
+james.sayJob();
+
+
+var james = {
+    job: "programmer",
+    married: false
+};
+
+// set to the first property name of "james"
+var aProperty = "job";
+
+// print the value of the first property of "james" 
+// using the variable "aProperty"
+
+aProperty["job"];
+console.log (james[aProperty]);
+
+
+
+// complete these definitions so that they will have
+// the appropriate types
+var anObj = { job: "I'm an object!" };
+var aNumber = 42;
+var aString = "I'm a string!";
+
+console.log( typeof anObj ); // should print "object"
+console.log(typeof aNumber  ); // should print "number"
+console.log(typeof aString  ); // should print "string"
+
+
+var myObj = {
+    // finish myObj
+    name : "Aurel",
+};
+
+console.log( myObj.hasOwnProperty('name') ); // should print true
+console.log( myObj.hasOwnProperty('nickname') ); // should print false
+
+
+var suitcase = {
+    shirt: "Hawaiian",
+    
+};
+
+if (suitcase.hasOwnProperty('shorts')){
+        
+    console.log(suitcase.shorts);
+    
+    } else {
+     
+     var shorts=suitcase.shorts 
+     suitcase.shorts="white";
+        
+        console.log(suitcase.shorts);
+        }
+	
+	
+	var nyc = {
+    fullName: "New York City",
+    mayor: "Bill de Blasio",
+    population: 8000000,
+    boroughs: 5
+}; for (var property in nyc){
+    
+    console.log(property);    
+    
+    }
+
+var nyc = {
+    fullName: "New York City",
+    mayor: "Bill de Blasio",
+    population: 8000000,
+    boroughs: 5
+};
+
+// write a for-in loop to print the value of nyc's properties
+for (var x in nyc ) {
+    
+    console.log(nyc[x]);
+    
+    
+    
+    }
+    
+    
+    function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Let's make bob again, using our constructor
+var bob = new Person("Bob Smith", 30);
+var susan = new Person("Susan Jordan", 35);
+
+// make your own class here
+function Circle(radius){
+    this.radius=radius;
+    
+    
+    
+    }
+    
+    
+    function Dog (breed) {
+  this.breed = breed;
+}
+
+// here we make buddy and teach him how to bark
+var buddy = new Dog("Golden Retriever");
+buddy.bark = function() {
+  console.log("Woof");
+};
+buddy.bark();
+
+// here we make snoopy
+var snoopy = new Dog("Beagle");
+// we need you to teach snoopy how to bark here
+snoopy.bark = function() {
+    
+    console.log("Auuuu");
+    };
+// this causes an error, because snoopy doesn't know how to bark!
+snoopy.bark();
+
+
+
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+// a function that prints the name of any given person
+var printPersonName = function (p) {
+  console.log(p.name);
+};
+
+var bob = new Person("Bob Smith", 30);
+printPersonName(bob);
+
+// make a person called me with your name and age
+// then use printPersonName to print your name
+var me = new Person("Dragos",32);
+printPersonName(me);
+
+
+
+
+function Dog (breed) {
+  this.breed = breed;
+};
+
+// here we make buddy and teach him how to bark
+var buddy = new Dog("golden Retriever");
+Dog.prototype.bark = function() {
+  console.log("Woof");
+};
+buddy.bark();
+
+// here we make snoopy
+var snoopy = new Dog("Beagle");
+/// this time it works!
+snoopy.bark();
+
+
+
+function Cat(name, breed) {
+    this.name = name;
+    this.breed = breed;
+}
+
+// let's make some cats!
+var cheshire = new Cat("Cheshire Cat", "British Shorthair");
+var gary = new Cat("Gary", "Domestic Shorthair");
+
+// add a method "meow" to the Cat class that will allow
+// all cats to print "Meow!" to the console
+
+var newcat= new Cat() 
+    
+    Cat.prototype.meow = function(){
+        
+        console.log("Meow!");
+        
+       
+    
+    };newcat.meow();
+// add code here to make the cats meow!
+
+
+
+// create your Animal class here
+var Animal = function(name,numLegs){
+    
+    this.name= name;
+    this.numLegs = numLegs;
+    
+    };
+
+
+// create the sayName method for Animal
+
+Animal.prototype.sayName = function (){
+    
+    
+    console.log("Hi my name is "+this.name);
+    
+    };
+
+
+
+
+// provided code to test above constructor and method
+var penguin = new Animal("Captain Cook", 2);
+penguin.sayName();
+
+
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+
+// create a Penguin constructor here
+function Penguin(name,numLegs){
+    
+    this.name=name;
+    this.numLegs=numLegs;
+    
+    }
+    
+Penguin.prototype.sayName = function(){
+    
+    console.log("Hi my name is "+ this.name);
+    
+    };    
+    
+    
+    
+
+
+// create a sayName method for Penguins here
+
+
+// our test code
+var theCaptain = new Penguin("Captain Cook", 2);
+theCaptain.sayName();
+
+
+// the original Animal class and sayName method
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+// define a Penguin class
+function Penguin(name,numLegs){
+    this.name=name;    
+    this.numLegs=2;
+    
+    }
+
+// set its prototype to be a new instance of Animal
+Penguin.prototype = new Animal();
+
+
+
+
+// the original Animal class and sayName method
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+// define a Penguin class
+function Penguin(name,numLegs){
+    this.name=name;    
+    this.numLegs=2;
+    
+    }
+
+// set its prototype to be a new instance of Animal
+Penguin.prototype = new Animal();
+
+var penguin= new Penguin("Hututo");
+    
+    penguin.sayName();
+  
+
+
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+// create your Emperor class here and make it inherit from Penguin
+
+function Emperor(name){
+    
+    this.name=name;
+    
+    } Emperor.prototype = new Penguin;
+
+// create an "emperor" object and print the number of legs it has
+
+var newEmperor= new Emperor("Gorge");
+
+console.log(newEmperor.numLegs);
+
+
+
+// original classes
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+    this.isAlive = true;
+}
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+function Emperor(name) {
+    this.name = name;
+    this.saying = "Waddle waddle";
+}
+
+// set up the prototype chain
+Penguin.prototype = new Animal();
+Emperor.prototype = new Penguin();
+
+var myEmperor = new Emperor("Jules");
+
+console.log( myEmperor.saying ); // should print "Waddle waddle"
+console.log( myEmperor.numLegs); // should print 2
+console.log( myEmperor.isAlive ); // should print true
+
+
+function Person(first,last,age) {
+   this.firstName = first;
+   this.lastName = last;
+   this.age = age;
+}
+
+var john = new Person('John','Smith',30);
+var myFirst = john.firstName;
+var myLast = john.lastName;
+
+//declare variable myAge set to the age of the john object.
+var myAge = john.age;
+
+
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+}
+
+// create your Person 
+var john = new Person("Iont",56 )
+console.log(john.bankBalance);
+// try to print his bankBalance
+
+
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+  
+   this.getBalance = function() {
+      // your code should return the bankBalance
+      return bankBalance;
+   };
+}
+
+var john = new Person('John','Smith',30);
+console.log(john.bankBalance);
+
+// create a new variable myBalance that calls getBalance()
+john.getBalance();
+
+var myBalance = john.getBalance();
+
+console.log(myBalance);
