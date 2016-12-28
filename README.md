@@ -13,6 +13,7 @@ prompt("Where are you from?");
 
 "Invat java din nou".length
 
+
 "I`m coding like a champ".length>10
 
 console.log(2*5)
@@ -940,3 +941,376 @@ if(iLoveJavaScript && iLoveLearning) {
 } else {
   console.log("You only like one but not the other? We'll work on it.");
 }
+
+
+// Declare your variables here!
+var hungry= true;
+var foodHere=true;
+
+var eat = function() {
+  // Add your if/else statement here!
+  if(hungry&&foodHere){
+      
+      return true;
+      
+      } else {
+          
+          return false;
+          
+          }
+  
+};
+
+// Declare your variables here!
+var tired= true;
+var bored= false;
+
+var nap = function() {
+  // Add your if/else statement here!
+  
+  if(tired || bored){
+      
+      return true;
+      } else {
+          
+          return false;
+          }
+};
+
+
+// Declare your variables here!
+var programming=false;
+
+var happy = function() {
+  // Add your if/else statement here!
+  if(!programming){
+      
+      return true;
+      
+      }else {
+          
+          
+          return false;
+          
+          }
+};
+
+
+var list= ["tenis","minge","paleta"];
+
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+console.log(languages[2]);
+
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+console.log(languages[2]);
+console.log(languages.length);
+
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+for (var i=0;i<languages.length;i++){
+    
+    console.log(languages[i]);
+    
+    
+    }
+
+var myArray=[32,true,"sir"];
+
+var newArray = [["cool", 3, 5], ["cool", 3, 5], ["cool", 3, 5]];
+
+var jagged=[["rowe 1","rowe ",5],[2,1] ];
+
+
+var phonebookEntry = {};
+
+phonebookEntry.name = 'Oxnard Montalvo';
+phonebookEntry.number = '(555) 555-5555';
+phonebookEntry.phone = function() {
+  console.log('Calling ' + this.name + ' at ' + this.number + '...');
+};
+
+phonebookEntry.phone();
+
+//Objects
+var me= {
+    
+    name:"Dragos",
+    age:32
+    
+    };
+    
+ var me = new Object();
+
+me.name="Dragos";
+me.age=32;
+    
+    
+    var object1= new Object();
+
+object1.name = "Aurel";
+
+
+var object2 =  new Object();
+
+object2.age = 34;
+
+var object3 = new Object();
+
+object3.color ="white";
+
+var myArray =[32,true,"my age",new Object()];
+
+var newArray=[[1,2,3],[6,new Object()] ];
+
+var myObject = {
+  name: 'Eduardo',
+  type: 'Most excellent',
+  // Add your code here!
+  interests: [4,3,2]
+};
+
+
+
+var myOwnObject = {
+    
+    age :32,
+    name :"Dragos"
+    
+    };
+    
+    
+(((3 * 90) === 270) || !(false && (!false)) || "bex".toUpperCase() === "BEX");
+var answer=true;
+
+
+// Here is an array of multiples of 8. But is it correct?
+var multiplesOfEight = [8,16,24,32,40,58];
+
+// Test to see if a number from the array is NOT a true
+// multiple of eight. Real multiples will return false.
+var answer = multiplesOfEight[58] % 8 !== 0;
+
+
+for(i = 1; i<21; i++) {
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz");
+    } else if(i % 3 === 0){
+        console.log("Fizz");
+    } else if(i % 5 === 0){
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+
+
+var name = prompt("Toy Story 2, Finding Nemo, or The Lion King");
+var getReview = function (movie) {
+    switch(movie){
+        case "Toy Story 2":
+            return "Great story. Mean prospector.";
+            break;
+        case "Finding Nemo":
+            return "Cool animation, and funny turtles.";
+            break;
+        case "The Lion King":
+            return "Great songs.";
+            break;
+        default:
+            return "I don't know!";
+    }
+};
+getReview(name);
+
+
+var Spencer = {
+  age: 22,
+  country: "United States"
+};
+
+// make your own object here called me
+var me = {
+    
+    age :32,
+    country:"Romania"
+    
+    };
+    
+    var bob = {
+  name: "Bob Smith",
+  age: 30
+};
+var susan = {
+  name: "Susan Jordan",
+  age: 25
+};
+// here we save Bob's information
+var name1 = bob.name;
+var age1 = bob.age;
+// finish this code by saving Susan's information
+var name2 =susan.name;
+var age2 =susan.age;
+
+// Take a look at our next example object, a dog
+var dog = {
+  species: "greyhound",
+  weight: 60,
+  age: 4
+};
+
+var species = dog["species"];
+// fill in the code to save the weight and age using bracket notation
+var weight = dog["weight"];
+var age = dog["age"];
+
+
+// Our bob object again, but made using a constructor this time 
+var bob = new Object();
+bob.name = "Bob Smith";
+bob.age = 30;
+// Here is susan1, in literal notation
+var susan1 = {
+  name: "Susan Jordan",
+  age: 24
+};
+// Make a new susan2 object, using a constructor instead
+var susan2 =  new Object();
+susan2.name="Susan Jordan";
+susan2.age=24;
+
+
+// help us make snoopy using literal notation
+// Remember snoopy is a "beagle" and is 10 years old.
+var snoopy ={
+
+species: "beagle",
+age : 10
+    };
+
+// help make buddy using constructor notation
+// buddy is a "golden retriever" and is 5 years old
+var buddy = new Object();
+
+buddy.species = "golden retriever";
+buddy.age=5;
+
+
+
+var bicycle = new Object();
+
+bicycle.speed=0;
+bicycle.gear=1;
+bicycle.frame_material = "carbon fiber";
+
+
+
+// Accepts a number x as input and returns its square
+var square = function (x) {
+  return x * x;
+};
+
+// Write the function multiply below
+// It should take two parameters and return the product
+
+var multiply = function(x,y){
+    
+    return x * y;
+    }; multiply(3,5);
+
+
+// here is bob again, with his usual properties
+var bob = new Object();
+bob.name = "Bob Smith";
+bob.age = 30;
+// this time we have added a method, setAge
+bob.setAge = function (newAge){
+  bob.age = newAge;
+};
+// here we set bob's age to 40
+bob.setAge(20);
+// bob's feeling old.  Use our method to set bob's age to 20
+
+
+var bob = new Object();
+bob.age = 17;
+// this time we have added a method, setAge
+bob.setAge = function (newAge){
+  bob.age = newAge;
+};
+
+bob.getYearOfBirth = function () {
+  return 2014 - bob.age;
+};
+console.log(bob.getYearOfBirth());
+
+
+// here we define our method using "this", before we even introduce bob
+var setAge = function (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+// and down here we just use the method we already made
+bob.setAge = setAge;
+  
+// change bob's age to 50 here
+bob.setAge(50);
+
+
+// here we define our method using "this", before we even introduce bob
+var setAge = function (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+bob.setAge = setAge;
+  
+// make susan here, and first give her an age of 25
+var susan = new Object;
+susan.age=25;
+susan.setAge=setAge;
+
+
+// here, update Susan's age to 35 using the method
+susan.setAge(35);
+
+
+var rectangle = new Object();
+rectangle.height = 3;
+rectangle.width = 4;
+// here is our method to set the height
+rectangle.setHeight = function (newHeight) {
+  this.height = newHeight;
+};
+// help by finishing this method
+rectangle.setWidth = function (newWidth){
+  this.width= newWidth;
+};
+// here change the width to 8 and height to 6 using our new methods
+rectangle.setHeight(6);
+rectangle.setWidth(8);
+
+
+var square = new Object();
+square.sideLength = 6;
+square.calcPerimeter = function() {
+  return this.sideLength * 4;
+};
+// help us define an area method here
+square.calcArea = function(){
+    
+    return this.sideLength *this.sideLength;
+    };
+
+
+
+var p = square.calcPerimeter();
+var a = square.calcArea();
+
+
+// here we make bob using the Object constructor
+var bob = new Object();
+bob.name = "Bob Smith";
+// add bob's age here and set it equal to 20
+bob.age=20;
