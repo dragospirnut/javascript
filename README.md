@@ -165,3 +165,170 @@ console.log("SE afiseaza daca prima conditie este adevarata");
 confirm("Are you ready to play?");
 prompt("I am ready");
 
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("If you are ready please print your name");
+var age=prompt("Waht is your age");
+if(age<13){
+    
+    console.log("You are allowed to play on your risk");
+    
+    
+    } else{
+        
+        console.log("Play!");
+        }
+        
+        
+        // Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("If you are ready please print your name");
+var age=prompt("Waht is your age");
+if(age<13){
+    
+    console.log("You are allowed to play on your risk");
+    
+    
+    } else{
+        
+        console.log("Play!");
+        }
+
+console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+
+
+
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("If you are ready please print your name");
+var age=prompt("What is your age");
+if(age<13){
+    
+    console.log("You are allowed to play on your risk");
+    
+    
+    } else{
+        
+        console.log("Play!");
+        }
+
+console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+var userAnswer=prompt("Do you want to race Bieber on stage?");
+
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("If you are ready please print your name");
+var age=prompt("What is your age");
+if(age<13){
+    
+    console.log("You are allowed to play on your risk");
+    
+    
+    } else{
+        
+        console.log("Play!");
+        }
+
+console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+var userAnswer=prompt("Do you want to race Bieber on stage?");
+if(userAnswer===prompt){
+    
+    console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+    
+    }else {
+        
+        console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");
+        }
+
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+prompt("If you are ready please print your name");
+var age=prompt("What is your age");
+if(age<13){
+    
+    console.log("You are allowed to play on your risk");
+    
+    
+    } else{
+        
+        console.log("Play!");
+        }
+
+console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+var userAnswer=prompt("Do you want to race Bieber on stage?");
+if(userAnswer===prompt){
+    
+    console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+    
+    }else {
+        
+        console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");
+        }
+        
+var feedback=prompt("Please rate this game out of 10!");
+
+if(prompt>8){
+    
+    console.log("Thank you! We should race at the next concert!");
+    
+    }else {
+        
+        console.log("I'll keep practicing coding and racing.");
+        
+        }
+        
+        var speed = 65;
+
+// Complete the condition in the ()s on line 4
+if (speed >80) {
+    
+ console.log("Slow down"); 
+	
+} 
+else {
+	console.log("Drive safe");
+
+
+}
+
+
+// This is what a function looks like:
+
+var divideByThree = function (number) {
+    var val = number / 3;
+    console.log(val);
+};
+
+// On line 12, we call the function by name
+// Here, it is called 'dividebythree'
+// We tell the computer what the number input is (i.e. 6)
+// The computer then runs the code inside the function!
+divideByThree(20);
+
+// Below is the greeting function!
+// See line 7
+// We can join strings together using the plus sign (+)
+// See the hint for more details about how this works.
+
+var greeting = function (name) {
+    console.log("Great to see you," + " " + name);
+};
+
+// On line 11, call the greeting function!
+greeting("Calaretule!");
+
+// Write your foodDemand function below.
+// Last hint: In your reusable block of code, end each line
+// with a semicolon (;)
+var foodDemand = function(food){
+    
+    console.log("I want to eat"+" " +food);
+    
+    
+    
+    };
+    
+    foodDemand("friptura");
